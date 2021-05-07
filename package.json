@@ -1,12 +1,13 @@
 {
   "dependencies": {
+    "css-minify": "^1.1.0",
     "tailwindcss": "^2.1.2"
   },
   "name": "blog",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build:css": "tailwind build src/style.css -o dist/style.css"
+    "build:css": "tailwind build src/style.css -o dist/style.css && css-minify -f dist/style.css -o dist/"
   },
   "author": "",
   "license": "ISC",
